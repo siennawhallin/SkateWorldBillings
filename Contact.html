@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SkateWorld Billings | Contact</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Poetsen+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="Skate_World_Styles.css">
+		<style>
+			.form-control {
+			  margin-bottom: 15px;
+			}
+
+			.contact-btn {
+			  background-color: #f582ae;
+			  color: white;
+			  border: none;
+			  padding: 12px 30px;
+			  font-size: 1.2rem;
+			  border-radius: 5px;
+			  transition: background-color 0.3s;
+			}
+
+			.contact-btn:hover {
+			  background-color: #ff7f94;
+			}
+
+			.contact-info {
+			  font-size: 1.2rem;
+			  line-height: 1.6;
+			  color: #001858;
+			  margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<nav class="navbar navbar-expand-lg">
+			<img style="width:6.25rem" src = "IMG/Logo.png" />
+			<a class="head-text navbar-brand" href="home.html"> <span style = "font-size:2rem" class = "poetsen-one-regular"> SkateWorld Billings </span> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<span class="national-park-1">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="Home.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="btn dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Skate Times
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="Hours.html">Hours</a>
+								<a class="dropdown-item" href="Calendar.html">Calendar</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Parties.html">Parties</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Know_Before_You_Go.html">Know Before You Go</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="btn dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Word on the Street
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="Word_on_the_Street.html">Word on the Street</a>
+								<a class="dropdown-item" href="A_Birthday_Party_So_Easy_and_Fun.html">A Birthday Party So Easy & Fun</a>
+								<a class="dropdown-item" href="Saturday_Snippets.html">Saturday Snippets</a>
+								<a class="dropdown-item" href="Baby_Steps.html">Baby Steps</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contact.html">Contact</a>
+						</li>
+					</ul>
+				</span>
+			</div>
+		</nav>
+		<div class = "container">
+			<section class="contact-section">
+				<h2>Contact Us</h2>
+				<form name = "contact-form" id="contact-form">
+					<div class="form-group">
+						<label for="fullName">Full Name</label>
+						<input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+					</div>
+					<div class="form-group">
+					  <label for="email">Email Address</label>
+					  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+					</div>
+					<button type="submit" id="submit-btn" class="contact-btn">Send Message</button>
+				</form>
+				<div class="contact-info">
+					<p><strong>Address:</strong> 29th St. West and Rosebud Dr. (off King Ave West, behind Famous Daves), Billings, MT 59101</p>
+					<p><strong>Phone:</strong> (406) 652-1249</p>
+					<p><strong>Email:</strong> contact@skateworldbillings.com</p>
+					<p><strong>Business Hours:</strong> Monday - Friday: 9 AM - 6 PM, Saturday: 10 AM - 8 PM, Sunday: Closed</p>
+				</div>
+			</section>
+		</div>
+		<hr class="orange"><hr class="teal">
+
+		<script>
+			document.getElementById("contact-form").addEventListener("submit", function(event) {
+			event.preventDefault();
+			alert("Your message has been sent successfully!");
+		  });
+		</script>
+	</body>
+</html>
+
